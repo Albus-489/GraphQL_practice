@@ -6,21 +6,21 @@ namespace GQLPractice.GraphQL
 {
     public class Mutation
     {
-        public async Task<AddSpeakerPayload> AddSpeakerAsync(
-            AddSpeakerInput input,
+        public async Task<AddAuthorPayload> AddAuthorAsync(
+            AddAuthorInput input,
             [Service] AppDbContext context)
         {
-            var speaker = new Speaker
+            var speaker = new Author
             {
                 Name = input.Name,
                 Bio = input.Bio,
                 WebSite = input.WebSite
             };
 
-            context.Speakers.Add(speaker);
+            context.Authors.Add(speaker);
             await context.SaveChangesAsync();
 
-            return new AddSpeakerPayload(speaker);
+            return new AddAuthorPayload(speaker);
         }
     }
 }

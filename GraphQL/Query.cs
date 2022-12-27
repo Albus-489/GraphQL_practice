@@ -6,7 +6,7 @@ namespace GQLPractice.GraphQL
 {
     public class Query
     {
-        public IQueryable<Speaker> GetSpeakers([Service] AppDbContext context) =>
-            context.Speakers;
+        public IQueryable<Author> GetAuthors([Service] AppDbContext context) =>
+            context.Authors;
     }
 }

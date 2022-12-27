@@ -1,6 +1,6 @@
 ﻿namespace GraphQL.Mutations
 {
-    public record AddSpeakerInput(
+    public record AddAuthorInput(
         string Name,
         string Bio,
         string WebSite

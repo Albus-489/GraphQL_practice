@@ -9,6 +9,6 @@ namespace GQLPractice.GraphQL.Data
         {
         }
 
-        public DbSet<Speaker> Speakers { get; set; }
+        public DbSet<Author> Authors { get; set; }
     }
 }

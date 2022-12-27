@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GQLPractice.GraphQL.Data
 {
-    public class Speaker
+    public class Author
     {
         public int Id { get; set; }
 
